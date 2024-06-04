@@ -1,3 +1,4 @@
 # word-guessing-game
-This game allows the user to guess a word from the word.py file with just 8 guesses. 
+Used Python modules that picks a random word for each round and provides users with a limited number of attempts to guess a random word from a list of about 100 words.
+
 The average user guesses the word in 7.5 guesses.

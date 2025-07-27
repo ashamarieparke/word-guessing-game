@@ -51,7 +51,7 @@ def word_guess():
 
     # gets here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
-        print('You died, sorry. The word was', word)
+        print('You lost, sorry. The word was', word)
     else:
         print('YAY! You guessed the word', word, '!!')
 

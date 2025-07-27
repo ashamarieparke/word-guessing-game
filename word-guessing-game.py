@@ -30,7 +30,7 @@ def word_guess():
         # what current word is (ie C - R D S)
         word_list = [letter if letter in used_letters else '-' for letter in word]
         print('Current word: ', ' '.join(word_list))
-
+        # user inputs a letter
         user_letter = input('Guess a letter: ').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
@@ -39,13 +39,14 @@ def word_guess():
                 print('')
 
             else:
-                lives = lives - 1  # takes away a life if wrong
+                lives = lives - 1  # takes away a life if it's not in the word
                 print('\nYour letter,', user_letter, 'is not in the word.')
-
+        # if the user has already used the letter
         elif user_letter in used_letters:
             print('\nYou have already used that letter. Guess another letter.')
 
         else:
+            # if the user input is not a valid letter
             print('\nThat is not a valid letter.')
 
     # gets here when len(word_letters) == 0 OR when lives == 0
